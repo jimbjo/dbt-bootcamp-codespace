@@ -1,5 +1,5 @@
-wtih src_listings as (
-    SELECT * from {{ ref('src_listings') }}
+with src_listing as (
+    SELECT * from {{ ref('src_listing') }}
 )
 SELECT  
 listing_id,
@@ -20,4 +20,4 @@ listing_id,
  created_at,
  updated_at
 FROM
- src_listings
+ src_listing
